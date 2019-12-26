@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--====== Meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Santanu Panda - Portfolio</title>
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <!-- <link rel="stylesheet" href="static/css/LineIcons.css"> -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="static/css/default.css">
+
+
+    <!--====== Background Animation css ======-->
+    <link rel="stylesheet" href="static/css/backgroundAnimation.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="static/css/style.css">
+
+
+    <!--====== Progress Bar css ======-->
+    <link rel="stylesheet" href="static/css/progressbar.css">
+
+
+    <!--====== FIREBASE ======-->
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase.js"></script>
+    <script src="static/js/firebase.js"></script>
+
+    <!--====== RESIZE JS ======-->
+    <script src="static/js/resize.js"></script>
+
+
+</head>
+
+<body>
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader_34">
+            <div>
+                <img src="static/img/logo2.png" alt="Logo">
+            </div>
+            <div>
+                Hello, I’m Loading
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER ENDS START ======-->
+
+    <!--====== HEADER PART START ======-->
+    <header id="home" class="header-area mt-60">
+        <div id="navBar" class="navigation fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar  navbar-expand-lg">
+                            <a class="navbar-brand" href="#home" style="max-width: 80%">
+                                <img src="static/img/fullSignature.png" alt="Logo">
+                            </a>
+                            <!-- Logo -->
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#projects">Projects</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#call-to-action">Resume</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- navbar collapse -->
+                        </nav>
+                        <!-- navbar -->
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+            <!-- new code  -->
+            <progress value="0" max="1">
+                <div class="progress-container">
+                    <span class="progress-bar"></span>    
+                </div>
+            </progress>
+            <!-- new code  -->
+
+        </div>
+        <!-- navigation -->
+
+
+        <div id="parallax" class="wholePagesection header-content d-flex align-items-center pt-100">
+            <div class="stars container">
+                <div class="small"></div>
+                <div class="medium"></div>
+                <div class="big"></div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="header-content-right align-items-center">
+                            <h4 class="sub-title">Hello, I’m</h4>
+                            <h1 class="title">Santanu Panda</h1>
+                            <!-- <p> UI Designer & Web Developer</p> -->
+                            <p> I am a <span id="typeMe" class="type" style="font-weight: bold;"></span></p>
+                            <div class="row" style="align-content: center;">
+                                <div class="col-lg-4 col-xl-5">
+                                    <a class="main-btn" href="#projects">View my Work</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- header content right -->
+                    </div>
+                    <div class="col-lg-6 col-xl-5 pt-25 pb-60">
+                        <img src="static/img/SantanuImage1.jpg" class="rounded-circle" alt="Santanu Image">
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- header content -->
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about-area pt-30">
+        <div class="container justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title text-center">
+                        <h2 class="title">About Me</h2>
+                        <p id="aboutMeQuote"></p>
+                    </div>
+                    <!-- section title -->
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="about-content mt-25">
+                        <h5 class="about-title">Hi There! I'm Santanu Panda</h5>
+                        <p></p>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-calendar"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Date of birth:</span> 8 Dec 1994</p>
+                                    </div>
+                                </div>
+                                <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-envelope"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Email:</span> <a href="mailto:shaantalk@gmail.com" style="text-decoration: none;">shaantalk@gmail.com</a></p>
+                                    </div>
+                                </div>
+                                <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-phone-handset"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Phone:</span> <a href="tel:917866040088">+91-7866040088</a></p>
+                                    </div>
+                                </div>
+                                <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-map-marker"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Current Location:</span>
+                                            <a href="http://maps.google.com/?q=HBR Layout, Bangalore" target="_blank">HBR Layout, Bangalore</a></p>
+                                    </div>
+                                </div>
+                                <!-- single info -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- about content -->
+                </div>
+
+            </div>
+            <!-- row -->
+
+            <!-- new code  -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-sm-8">
+                    <!-- <div class="about-skills pt-25" id="skillsContainer">
+                        <h5 class="about-title">Technical Skills</h5>
+
+                    </div> -->
+
+                    <div class="about-skills pt-25" id="skillsContainer">
+                        <div class="row justify-content-center">
+                            <p style="font-size: 25px; font-weight: 300; color: black">Technical Skills</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- about skills -->
+            </div>
+            <!-- new code  -->
+        </div>
+        <!-- container -->
+
+        </div>
+
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+
+    <!--====== PROJECTS PART START ======-->
+
+    <section id="projects" class="services-area gray-bg pt-30">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-30">
+                        <h2 class="title">My Projects</h2>
+                        <p>I love to build things. Here are few of my open source projects.</p>
+                    </div>
+                    <!-- section title -->
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center" id="projectsContainer"></div>
+            <!-- row -->
+            <div class="row justify-content-center pt-30 pb-30">
+                <a class="main-btn" href="https://github.com/shaantalk" target="_blank">See More...</a>
+            </div>
+        </div>
+        <!-- container -->
+    </section>
+
+    <!--====== PROJECTS PART ENDS ======-->
+
+
+
+    <!--====== CALL TO ACTION PART START ======-->
+
+    <section id="call-to-action" class="call-to-action pt-125 pb-130 bg_cover" style="background-image: url(static/img/bg1.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9">
+                    <div class="call-action-content text-center">
+                        <h2 class="action-title">Have any project on mind ?</h2>
+
+                        <ul>
+                            <li><a class="main-btn custom" href="https://github.com/shaantalk/MyResume/raw/master/SantanuPanda_Resume.pdf">Download
+                                    CV</a></li>
+                            <li><a class="main-btn custom" href="#contact">Hire Me</a></li>
+                        </ul>
+                    </div>
+                    <!-- call action content -->
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+    <!--====== CALL TO ACTION PART ENDS ======-->
+
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="wholePagesection contact-area pt-30 pb-30 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">Please Get In Touch</h2>
+                    </div>
+                    <!-- section title -->
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-map-marker"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Address</h6>
+                            <p>3/3 Secondary Road, Durgapur, West Bengal</p>
+                        </div>
+                    </div>
+                    <!-- contact box -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Phone</h6>
+                            <p>+91 7866040088</p>
+                            <p>+91 7980642266</p>
+                        </div>
+                    </div>
+                    <!-- contact box -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Email</h6>
+                            <p>shaantalk@gmail.com</p>
+                            <p style="color: white">FillerFiller</p>
+                        </div>
+                    </div>
+                    <!-- contact box -->
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="col-lg-12 footer-widget  mt-30 pt-10 pb-30">
+                <div class="footer-content text-center">
+                    <p class="mt-">Let's talk. You can contact me in these websites.</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/talk2Shaan" target="_blank"><i
+                                    class="lni-facebook-filled"></i></a></li>
+                        <li></li>
+                        <li><a href="https://twitter.com/shaantalk" target="_blank"><i
+                                    class="lni-twitter-original"></i></a></li>
+                        <li></li>
+                        <li><a href="https://github.com/shaantalk" target="_blank"><i
+                                    class="lni-github-original"></i></a></li>
+                        <li></li>
+                        <li><a href="https://www.linkedin.com/in/shaantalk/" target="_blank"><i
+                                    class="lni-linkedin-original"></i></a></li>
+                        <li></li>
+                        <li><a href="https://wa.me/917866040088" target="_blank"><i class="lni-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="static/js/modernizr-3.6.0.min.js"></script>
+    <script src="static/js/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Parallax js ======-->
+    <script src="static/js/parallax.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="static/js/waypoints.min.js"></script>
+    <script src="static/js/jquery.counterup.min.js"></script>
+
+
+    <!--====== Appear js ======-->
+    <script src="static/js/jquery.appear.min.js"></script>
+
+
+    <!--====== Progress Bar js ======-->
+    <script src="static/js/progressbar.js"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="static/js/scrolling-nav.js"></script>
+    <script src="static/js/jquery.easing.min.js"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="static/js/main.js"></script>
+
+    <!--====== Typed js ======-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        var typed = new Typed(".type", {
+            strings: ["UI Designer",
+                "Web Developer",
+            ],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>
