@@ -83,7 +83,7 @@ function renderProjectSection(jsonProjects, jsonIcons) {
                                 <div class="single-service text-center mt-30">
                                     <div class="service-icon">` + currIcon + `</div>
                                     <div class="service-content flex-fill">
-                                        <h4 class="service-title"><a href="` + currGithubLink + `" target="_blank">` + currProjectName + `</a></h4>
+                                        <h4 class="service-title"><a href="` + currGithubLink + `" rel="noopener" target="_blank">` + currProjectName + `</a></h4>
                                         <p>` + currProjectDescription + `</p>
                                     </div>
                                 </div>
