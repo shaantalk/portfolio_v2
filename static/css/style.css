@@ -109,6 +109,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-style: normal;
+	font-display: swap;
     color: #8a8fa3;
 }
 
