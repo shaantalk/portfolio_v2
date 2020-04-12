@@ -2,435 +2,579 @@
 <html lang="en">
 
 <head>
-
-    <!--====== Meta tags ======-->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website belongs to Santanu Panda">
-    <meta http-equiv="Cache-control" content="public">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 
-    <!--====== Title ======-->
-    <title>Santanu Panda - Portfolio</title>
-
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
-
-    <!--====== Line Icons css ======-->
-<!--     <link rel="stylesheet" href="static/css/LineIcons.css"> -->
-    <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
-
-    <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="static/css/magnific-popup.css">
-
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="static/css/default.css">
-
-
-    <!--====== Background Animation css ======-->
-    <link rel="stylesheet" href="static/css/backgroundAnimation.css">
-
-    <!--====== Style css ======-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/style.css">
 
+    <!-- Waves css -->
+    <link rel="stylesheet" href="static/plugins/css/waves.min.css">
 
-    <!--====== Progress Bar css ======-->
-    <link rel="stylesheet" href="static/css/progressbar.css">
+    <!-- Themify icons -->
+    <link rel="stylesheet" href="static/plugins/themify/themify-icons.css">
 
+    <!-- Line Icons -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
 
-    <!--====== FIREBASE ======-->
-    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase.js"></script>
-    <script src="static/js/firebase.js"></script>
-
-    <!--====== RESIZE JS ======-->
-    <script src="static/js/resize.js"></script>
-
-
+    <title>Santanu Panda</title>
 </head>
 
-<body>
-    <!--====== PRELOADER PART START ======-->
-
-    <div class="preloader">
-        <div class="loader_34">
-            <div>
-                <img src="static/img/logo2.png" alt="Logo">
+<body class="disable-scrollbars">
+    <header class="main-navbar-header">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="menu-toggle-button">
+                <a class="nav-link wave-effect" href="#" id="sidebarCollapse">
+                    <i class="lni lni-menu"></i>
+                </a>
             </div>
-            <div>
-                Hello, I’m Loading
+            <a class="navbar-brand" href="#">Santanu Panda</a>
+
+            <ul class="navbar-nav ml-auto navbar-top-links">
+                <li class="dropdown">
+                    <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="nav-sidebar active">
+            <ul class="list-unstyled components slimescroll-id" id="accordion">
+                <div class="user-profile">
+                    <div class="dropdown user-pro-body">
+                        <div><img src="static/img/Hero2.jpg" alt="user-img" class="img-circle"></div>
+                        Santanu Panda
+                    </div>
+                </div>
+
+                <li class="active">
+                    <a href="#homeSubmenu" class="wave-effect">
+                        <i class="ti-home m-r-10"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="wave-effect">About</a>
+                    <a href="#pageSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu" data-parent="#accordion" id="accordion2">
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                        <li>
+                            <a href="#pageSubmenu2" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">More pages</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu2" data-parent="#accordion2">
+                                <li><a href="#">Page 4</a></li>
+                                <li><a href="#">Page 5</a></li>
+                                <li><a href="#">Page 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#pageSubmenu3" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Even more</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu3" data-parent="#accordion2">
+                                <li><a href="#">Page 7</a></li>
+                                <li><a href="#">Page 8</a></li>
+                                <li><a href="#">Page 9</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class=" wave-effect">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#" class=" wave-effect">Contact</a>
+                </li>
+                <li>
+                    <a href="login.html" class=" wave-effect">
+                        <i class="ti-user m-r-10"></i>Login Page
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="blurrMe" class="container content-area" style="margin-right: 0%;">
+            <div class="row">
+                <!-- Landing Section Starts -->
+                <section id="section1" class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row mt-md-3">
+                        <div id="landingText" class="col-md-5 col-sm-5 col-xs-12 offset-sm-1">
+                            <div class="container">
+                                <div class="ml-sm-5">
+                                    <p class="lead sub-title">Hello, I’m</p>
+                                    <p style="font-size:300%; font-weight: 400; margin-bottom: 2px;">Santanu Panda</p>
+                                    <p class="lead d-sm-none"> I am a
+                                        <strong id="typeMe" class="type"></strong>
+                                    </p>
+                                    <p class="d-none d-sm-block">I am Web developer who is able to build a web presence from the ground up - from concept, navigation, layout and programming to UX and SEO.</p>
+                                    <p class="d-none d-sm-block">Skilled at writing well-designed, testable and efficient code using current best practices in Web development. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia
+                                        Web tools.
+                                    </p>
+                                </div>
+                                <div class="row social-link-container" style="margin-left: 0;">
+                                    <div class="social-link">
+                                        <button class="btn neumorphic neumorphic-pill" style="margin-bottom: 1rem;">
+                                            <a href="https://www.facebook.com/talk2Shaan" rel="noopener" target="_blank">View my Work</a>
+                                        </button>
+                                    </div>
+                                    <div class="social-link">
+                                        <button class="btn neumorphic neumorphic-pill" style="margin-bottom: 1rem; margin-left: 2rem;">
+                                            <a href="https://www.facebook.com/talk2Shaan" rel="noopener" target="_blank">Download CV</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 offset-sm-1">
+                            <img src="./static/img/Hero1.jpg" class="img-fluid rounded" alt="Responsive image">
+                            <div class="row mt-5 px-2">
+                                <div class="neumorphic neumorphic-box col-md-10 col-sm-10 col-xs-12 offset-sm-1 social-links">
+                                    <div class="row social-link-container">
+                                        <div class="social-link">
+                                            <a href="https://www.facebook.com/talk2Shaan" rel="noopener" target="_blank"><i class="lni-facebook-filled"></i></a>
+                                        </div>
+                                        <div class="social-link">
+                                            <a href="https://github.com/shaantalk" rel="noopener" target="_blank"><i class="lni-github-original"></i></a>
+                                        </div>
+                                        <div class="social-link">
+                                            <a href="https://www.linkedin.com/in/shaantalk/" rel="noopener" target="_blank"><i class="lni-linkedin-original"></i></a>
+                                        </div>
+                                        <div class="social-link">
+                                            <a href="https://wa.me/917866040088" rel="noopener" target="_blank"><i class="lni-whatsapp"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Landing Section Ends -->
+
+                <!-- Technical Skills Section Starts -->
+                <section id="section2" class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <h1>Technical Skills</h1>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-block">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                <p>Experienced in UI Technology and Web Development. I have interest in System design and Cloud Technologies as well.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-sm-none">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                <p>I am Web developer who is able to build a web presence from the ground up - from concept, navigation, layout and programming to UX and SEO.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="techSkills" class="row px-2 pt-sm-3 pt-3">
+                        <div class="neumorphic neumorphic-box col-md-4 col-sm-4 col-xs-12 py-1 offset-sm-1 my-sm-auto">
+                            <!-- Python -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="float-left">Python</div>
+                                    <div class="float-right">90%</div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="skill-bar-inset" data-percent="90%">
+                                    <div class="fill-skillbar"></div>
+                                </div>
+                            </div>
+
+                            <!-- Javascript -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="float-left">Javascript</div>
+                                    <div class="float-right">70%</div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="skill-bar-inset" data-percent="70%">
+                                    <div class="fill-skillbar"></div>
+                                </div>
+                            </div>
+
+                            <!-- Bootstrap -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="float-left">Bootstrap</div>
+                                    <div class="float-right">95%</div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="skill-bar-inset" data-percent="95%">
+                                    <div class="fill-skillbar"></div>
+                                </div>
+                            </div>
+
+                            <!-- React -->
+                            <div class="d-none d-sm-block">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="float-left">React</div>
+                                        <div class="float-right">25%</div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="skill-bar-inset" data-percent="25%">
+                                        <div class="fill-skillbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Postgres -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="float-left">Postgres</div>
+                                    <div class="float-right">95%</div>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="skill-bar-inset" data-percent="95%">
+                                    <div class="fill-skillbar"></div>
+                                </div>
+                            </div>
+
+                            <!-- Git -->
+                            <div class="d-none d-sm-block">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="float-left">Git</div>
+                                        <div class="float-right">50%</div>
+                                    </div>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="skill-bar-inset" data-percent="50%">
+                                        <div class="fill-skillbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 col-sm-5 col-xs-12 offset-sm-1 px-0">
+                            <div class="neumorphic neumorphic-box mt-4 mt-sm-0 px-3 py-1 py-sm-3">
+                                <!-- Google Cloud -->
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="float-left lead"><i class="mr-3 lni lni-google"></i>Google Cloud</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Deployed projects using Google Compute Engine, Stackdriver logging, App Engine, Cloud SQL etc...</p>
+                                    </div>
+                                </div>
+
+                                <!-- Databases -->
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="float-left lead"><i class="mr-3 lni lni-database"></i>Databases</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Worked with Postgres, Google Firebase and MongoDB.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Others -->
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="float-left lead"><i class="mr-3 lni lni-list"></i>Others</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Handled asynchronous tasks with RabbitMQ, Redis, Celery.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Made several projects on Robotics using Arduino and Raspberry Pi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" d-none d-sm-block mt-4 px-3 py-1 py-sm-3">
+                                <!-- Certificates-->
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="float-left lead"><i class="mr-3 lni lni-certificate"></i>Certificates</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="py-3 px-3">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="float-left lead ml-5">Certified Ethical Hacker</div>
+                                                    <div class="float-right neumorphic neumorphic-pill py-1 px-2 mr-5">
+                                                        <a href="https://www.facebook.com/talk2Shaan" rel="noopener" target="_blank">Download</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Technical Skills Section Ends -->
+
+                <!-- My Project Section Starts -->
+                <section id="section3" class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <h1>My Projects</h1>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-block">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                <p>I love to build things. Here are few of my open source projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects row px-1 px-sm-3 py-sm-2">
+                        <!-- First Project -->
+                        <div class="neumorphic-inset neumorphic-box col-md-3 col-sm-3 col-xs-12 text-center px-0 mx-sm-auto mt-2 mt-sm-0">
+                            <div class="card bg-transparent">
+                                <div class="card-header">
+                                    <h5 class="d-inline">Mini Portfolio</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="Demo"><i class="lni lni-eye"></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="See in GitHub"><i class="lni lni-github-original"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Second Project -->
+                        <div class="neumorphic-inset neumorphic-box col-md-3 col-sm-3 col-xs-12 text-center px-0 mx-sm-auto mt-2 mt-sm-0">
+                            <div class=" card bg-transparent ">
+                                <div class="card-header ">
+                                    <h5 class="d-inline ">Mini Portfolio</h5>
+                                </div>
+                                <div class="card-body ">
+                                    <p class="card-text ">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
+                                </div>
+                                <div class="card-footer ">
+                                    <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Third Project -->
+                        <div class="neumorphic-inset neumorphic-box col-md-3 col-sm-3 col-xs-12 text-center px-0 mx-sm-auto mt-2 mt-sm-0">
+                            <div class="card bg-transparent ">
+                                <div class="card-header ">
+                                    <h5 class="d-inline ">Mini Portfolio</h5>
+                                </div>
+                                <div class="card-body ">
+                                    <p class="card-text ">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
+                                </div>
+                                <div class="card-footer ">
+                                    <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-block">
+                        <div class="projects row px-1 px-sm-3 py-sm-2">
+                            <!-- First Project -->
+                            <div class="neumorphic-inset neumorphic-box col-md-3 col-sm-3 col-xs-12 text-center px-0 mx-sm-auto mt-2 mt-sm-0">
+                                <div class="card bg-transparent">
+                                    <div class="card-header">
+                                        <h5 class="d-inline">Mini Portfolio</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="Demo"><i class="lni lni-eye"></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="See in GitHub"><i class="lni lni-github-original"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second Project -->
+                            <div class="neumorphic-inset neumorphic-box col-md-3 col-sm-3 col-xs-12 text-center px-0 mx-sm-auto mt-2 mt-sm-0">
+                                <div class=" card bg-transparent ">
+                                    <div class="card-header ">
+                                        <h5 class="d-inline ">Mini Portfolio</h5>
+                                    </div>
+                                    <div class="card-body ">
+                                        <p class="card-text ">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Third Project -->
+                            <div class="neumorphic-inset neumorphic-box col-md-3 col-sm-3 col-xs-12 text-center px-0 mx-sm-auto mt-2 mt-sm-0">
+                                <div class="card bg-transparent ">
+                                    <div class="card-header ">
+                                        <h5 class="d-inline ">Mini Portfolio</h5>
+                                    </div>
+                                    <div class="card-body ">
+                                        <p class="card-text ">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center m-auto">
+                            <a href="https://github.com/shaantalk" target="blank" class="btn btn-custom neumorphic neumorphic-box">Click here to see more...</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- About Me Section Starts -->
+                <section id="section4" class="col-md-12 col-sm-12 col-xs-12 text-center" style="background: black;">
+                    <div class="d-none d-sm-block">
+                        <div class="row px-1 px-sm-3 py-sm-2">
+                            <div class="col-md-3 col-sm-3 col-xs-12 px-0 mx-sm-auto mt-2 mt-sm-0">
+                                <div class="lead"><a href="http://maps.google.com/?q=sri%20lasya%20fairview%20apartment,HBR%20Layout,%20Bangalore" rel="noopener" target="_blank"><i class="mr-3 lni lni-map-marker"></i>HBR Layout, Bangalore</a></div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 px-0 mx-sm-auto mt-2 mt-sm-0">
+                                <div class="lead"><a href="mailto:shaantalk@gmail.com" style="text-decoration: none;"><i class="mr-3 lni lni-envelope"></i>shaantalk@gmail.com</a></div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 px-0 mx-sm-auto mt-2 mt-sm-0">
+                                <div class="lead"><a href="tel:917866040088"><i class="mr-3 lni lni-phone"></i>+91-7866040088</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-sm-none">
+                        <div class="row py-2">
+                            <div class="col">
+                                <div class="lead"><a href="http://maps.google.com/?q=sri%20lasya%20fairview%20apartment,HBR%20Layout,%20Bangalore" rel="noopener" target="_blank"><i class="mr-3 lni lni-map-marker"></i></a></div>
+                            </div>
+                            <div class="col">
+                                <div class="lead"><a href="mailto:shaantalk@gmail.com" style="text-decoration: none;"><i class="mr-3 lni lni-envelope"></i></a></div>
+                            </div>
+                            <div class="col">
+                                <div class="lead"><a href="tel:917866040088"><i class="mr-3 lni lni-phone"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
+    <!-- SVG filter for Firefox -->
+    <svg style="display:none" xmlns="http://www.w3.org/2000/svg" version="1.1 ">
+        <filter id="blur">
+        <feGaussianBlur stdDeviation="5" />
+        </filter>
+    
+        <filter id="blurLogo">
+        <feGaussianBlur stdDeviation="1" />
+        </filter>
+    </svg>
+    <!-- JQuery 3.2.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <!-- Popper -->
+    <script src="static/js/popper.min.js "></script>
+    <!-- Bootstrap -->
+    <script src="static/js/bootstrap.min.js "></script>
+    <!-- Waves -->
+    <script src="static/plugins/js/waves.min.js "></script>
+    <!-- Progress Bar -->
+    <script src="static/plugins/ProgressBar/progressbar.min.js "></script>
+    <!-- Sidebar Collapse -->
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+                console.log("Before Blur")
+                $('#blurrMe').toggleClass('blurred');
+                console.log("After Blur")
+            });
+            Waves.init();
+            Waves.attach('.wave-effect', ['waves-button']);
+            Waves.attach('.wave-effect-float', ['waves-button', 'waves-float']);
+        });
 
-    <!--====== PRELOADER ENDS START ======-->
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
 
-    <!--====== HEADER PART START ======-->
-    <header id="home" class="header-area mt-60">
-        <div id="navBar" class="navigation fixed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar  navbar-expand-lg">
-                            <a class="navbar-brand" href="#home" style="max-width: 80%">
-                                <img src="static/img/fullSignature.png" alt="Logo">
-                            </a>
-                            <!-- Logo -->
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
 
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
+        // Immediately invoked function to set the theme on initial load
+        (function() {
+            if (localStorage.getItem('theme') === 'theme-light') {
+                setTheme('theme-light');
+                document.getElementById('slider').checked = true;
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            }
+        })();
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a>
-                                    </li>
-                                    <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#projects">Projects</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#call-to-action">Resume</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
-                                </ul>
-                            </div>
-                            <!-- navbar collapse -->
-                        </nav>
-                        <!-- navbar -->
-                    </div>
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-            <!-- new code  -->
-            <progress value="0" max="1">
-                <div class="progress-container">
-                    <span class="progress-bar"></span>    
-                </div>
-            </progress>
-            <!-- new code  -->
+        // Checks if a div is in view or not
+        $(window).scroll(function() {
+            var hT = $('#techSkills').offset().top,
+                hH = $('#techSkills').outerHeight(),
+                wH = $(window).height(),
+                wS = $(this).scrollTop();
 
-        </div>
-        <!-- navigation -->
+            if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
+                animateSkills()
+            }
+        });
 
-
-        <div id="parallax" class="wholePagesection header-content d-flex align-items-center pt-100">
-            <div class="stars container">
-                <div class="small"></div>
-                <div class="medium"></div>
-                <div class="big"></div>
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-xl-7">
-                        <div class="header-content-right align-items-center">
-                            <h4 class="sub-title">Hello, I’m</h4>
-                            <h1 class="title">Santanu Panda</h1>
-                            <!-- <p> UI Designer & Web Developer</p> -->
-                            <p> I am a <span id="typeMe" class="type" style="font-weight: bold;"></span></p>
-                            <div class="row" style="align-content: center;">
-                                <div class="col-lg-4 col-xl-5">
-                                    <a class="main-btn" href="#projects">View my Work</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- header content right -->
-                    </div>
-                    <div class="col-lg-6 col-xl-5 pt-25 pb-60">
-                        <img src="static/img/SantanuImage2.jpg" class="rounded-circle" alt="Santanu Image">
-                    </div>
-                </div>
-                <!-- row -->
-            </div>
-            <!-- container -->
-        </div>
-        <!-- header content -->
-    </header>
-
-    <!--====== HEADER PART ENDS ======-->
-
-
-    <!--====== ABOUT PART START ======-->
-
-    <section id="about" class="about-area pt-30">
-        <div class="container justify-content-center">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="section-title text-center">
-                        <h2 class="title">About Me</h2>
-                        <p id="aboutMeQuote"></p>
-                    </div>
-                    <!-- section title -->
-                </div>
-            </div>
-            <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="about-content mt-25">
-                        <h5 class="about-title">Hi There! I'm Santanu Panda</h5>
-                        <p></p>
-                        <ul class="clearfix">
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-calendar"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span>Date of birth:</span> 8 Dec 1994</p>
-                                    </div>
-                                </div>
-                                <!-- single info -->
-                            </li>
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-envelope"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span>Email:</span> <a href="mailto:shaantalk@gmail.com" style="text-decoration: none;">shaantalk@gmail.com</a></p>
-                                    </div>
-                                </div>
-                                <!-- single info -->
-                            </li>
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-phone-handset"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span>Phone:</span> <a href="tel:917866040088">+91-7866040088</a></p>
-                                    </div>
-                                </div>
-                                <!-- single info -->
-                            </li>
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-map-marker"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span>Current Location:</span>
-                                            <a href="http://maps.google.com/?q=HBR Layout, Bangalore" rel="noopener" target="_blank">HBR Layout, Bangalore</a></p>
-                                    </div>
-                                </div>
-                                <!-- single info -->
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- about content -->
-                </div>
-
-            </div>
-            <!-- row -->
-
-            <!-- new code  -->
-            <div class="row justify-content-center">
-                <div class="col-lg-10 col-sm-8">
-                    <!-- <div class="about-skills pt-25" id="skillsContainer">
-                        <h5 class="about-title">Technical Skills</h5>
-
-                    </div> -->
-
-                    <div class="about-skills pt-25" id="skillsContainer">
-                        <div class="row justify-content-center">
-                            <p style="font-size: 25px; font-weight: 300; color: black">Technical Skills</p>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- about skills -->
-            </div>
-            <!-- new code  -->
-        </div>
-        <!-- container -->
-
-        </div>
-
-    </section>
-
-    <!--====== ABOUT PART ENDS ======-->
-
-
-    <!--====== PROJECTS PART START ======-->
-
-    <section id="projects" class="services-area gray-bg pt-30">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-30">
-                        <h2 class="title">My Projects</h2>
-                        <p>I love to build things. Here are few of my open source projects.</p>
-                    </div>
-                    <!-- section title -->
-                </div>
-            </div>
-            <!-- row -->
-            <div class="row justify-content-center" id="projectsContainer"></div>
-            <!-- row -->
-            <div class="row justify-content-center pt-30 pb-30">
-                <a class="main-btn" href="https://github.com/shaantalk" rel="noopener" target="_blank">See More...</a>
-            </div>
-        </div>
-        <!-- container -->
-    </section>
-
-    <!--====== PROJECTS PART ENDS ======-->
-
-
-
-    <!--====== CALL TO ACTION PART START ======-->
-
-    <section id="call-to-action" class="call-to-action pt-125 pb-130 bg_cover">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-9">
-                    <div class="call-action-content text-center">
-                        <h2 class="action-title">Have any project on mind ?</h2>
-
-                        <ul>
-                            <li><a class="main-btn custom" href="https://github.com/shaantalk/MyResume/raw/master/SantanuPanda_Resume.pdf">Download
-                                    CV</a></li>
-                            <li><a class="main-btn custom" href="#contact">Hire Me</a></li>
-                        </ul>
-                    </div>
-                    <!-- call action content -->
-                </div>
-            </div>
-            <!-- row -->
-        </div>
-        <!-- container -->
-    </section>
-
-    <!--====== CALL TO ACTION PART ENDS ======-->
-
-
-    <!--====== CONTACT PART START ======-->
-
-    <section id="contact" class="wholePagesection contact-area pt-30 pb-30 gray-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-25">
-                        <h2 class="title">Please Get In Touch</h2>
-                    </div>
-                    <!-- section title -->
-                </div>
-            </div>
-            <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
-                            <i class="lni-map-marker"></i>
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title">Address</h6>
-                            <p>3/3 Secondary Road, Durgapur, West Bengal</p>
-                        </div>
-                    </div>
-                    <!-- contact box -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
-                            <i class="lni-phone"></i>
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title">Phone</h6>
-                            <p>+91 7866040088</p>
-                            <p>+91 7980642266</p>
-                        </div>
-                    </div>
-                    <!-- contact box -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
-                            <i class="lni-envelope"></i>
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title">Email</h6>
-                            <p>shaantalk@gmail.com</p>
-                            <p style="color: white">FillerFiller</p>
-                        </div>
-                    </div>
-                    <!-- contact box -->
-                </div>
-            </div>
-            <!-- row -->
-
-            <div class="col-lg-12 footer-widget  mt-30 pt-10 pb-30">
-                <div class="footer-content text-center">
-                    <p class="mt-">Let's talk. You can contact me in these websites.</p>
-                    <ul>
-                        <li><a href="https://www.facebook.com/talk2Shaan" rel="noopener" target="_blank"><i
-                                    class="lni-facebook-filled"></i></a></li>
-                        <li></li>
-                        <li><a href="https://twitter.com/shaantalk" rel="noopener" target="_blank"><i
-                                    class="lni-twitter-original"></i></a></li>
-                        <li></li>
-                        <li><a href="https://github.com/shaantalk" rel="noopener" target="_blank"><i
-                                    class="lni-github-original"></i></a></li>
-                        <li></li>
-                        <li><a href="https://www.linkedin.com/in/shaantalk/" rel="noopener" target="_blank"><i
-                                    class="lni-linkedin-original"></i></a></li>
-                        <li></li>
-                        <li><a href="https://wa.me/917866040088" rel="noopener" target="_blank"><i class="lni-whatsapp"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- container -->
-    </section>
-
-    <!--====== CONTACT PART ENDS ======-->
-
-
-
-
-    <!--====== jquery js ======-->
-    <script src="static/js/modernizr-3.6.0.min.js"></script>
-    <script src="static/js/jquery-1.12.4.min.js"></script>
-
-    <!--====== Bootstrap js ======-->
-    <script src="static/bootstrap/js/bootstrap.min.js"></script>
-    <script src="static/js/popper.min.js"></script>
-
-    <!--====== Magnific Popup js ======-->
-    <script src="static/js/jquery.magnific-popup.min.js"></script>
-
-    <!--====== Parallax js ======-->
-    <script src="static/js/parallax.min.js"></script>
-
-    <!--====== Counter Up js ======-->
-    <script src="static/js/waypoints.min.js"></script>
-    <script src="static/js/jquery.counterup.min.js"></script>
-
-
-    <!--====== Appear js ======-->
-    <script defer src="static/js/jquery.appear.min.js"></script>
-
-
-    <!--====== Progress Bar js ======-->
-    <script src="static/js/progressbar.js"></script>
-
-    <!--====== Scrolling js ======-->
-    <script src="static/js/scrolling-nav.js"></script>
-    <script src="static/js/jquery.easing.min.js"></script>
-
-
-    <!--====== Main js ======-->
-    <script src="static/js/main.js"></script>
-
+        //Skills
+        function animateSkills() {
+            $('.skill-bar-inset').each(function() {
+                $(this).find('.fill-skillbar').animate({
+                    width: $(this).attr('data-percent')
+                }, 2500);
+            });
+        }
+    </script>
     <!--====== Typed js ======-->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9 "></script>
     <script>
-        var typed = new Typed(".type", {
-            strings: ["UI Designer",
-                "Web Developer",
+        var typed = new Typed(".type ", {
+            strings: ["UI Designer ",
+                "Web Developer ",
             ],
             typeSpeed: 60,
             backSpeed: 60,
             loop: true
         });
     </script>
-
 </body>
 
 </html>
