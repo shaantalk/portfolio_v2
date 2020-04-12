@@ -14,6 +14,8 @@
     --skillbar-fill-color: #dd2138;
     --btn-custom-color: #dd2138;
     --btn-custom-hover-color: #eb3f53cc;
+    --footer-background: #a091b6cc;
+    --footer-font-color: #ffffff;
 }
 
 .theme-dark {
@@ -32,6 +34,8 @@
     --skillbar-fill-color: #563d7ccc;
     --btn-custom-color: #563d7ccc;
     --btn-custom-hover-color: #422e61cc;
+    --footer-background: #222020;
+    --footer-font-color: #ffffff;
 }
 
 body {
@@ -98,6 +102,8 @@ section {
 
 #section4 {
     min-height: 100% !important;
+    background-color: var(--footer-background) !important;
+    color: var(--footer-font-color) !important;
 }
 
 #section1 {
