@@ -330,20 +330,6 @@ section {
     margin-left: -250px;
 }
 
-
-/* Social Links */
-
-.social-link-container {
-    display: table;
-    width: 100%;
-}
-
-.social-link {
-    font-size: 3em;
-    display: table-cell;
-    text-align: center;
-}
-
 a {
     text-decoration: none !important;
     color: var(--body-font-color);
