@@ -315,8 +315,8 @@
                                         <div class="py-3 px-3">
                                             <div class="row">
                                                 <div class="col">
-                                                    <div class="float-left lead ml-5">Certified Ethical Hacker</div>
-                                                    <div class="float-right neumorphic neumorphic-pill py-1 px-2 mr-5">
+                                                    <div class="float-left lead ml-3">Certified Ethical Hacker</div>
+                                                    <div class="float-right neumorphic neumorphic-pill py-1 px-2 mr-3">
                                                         <a href="https://www.facebook.com/talk2Shaan" rel="noopener" target="_blank">Download</a>
                                                     </div>
                                                 </div>
@@ -357,6 +357,7 @@
                                 <div class="card-footer">
                                     <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="Demo"><i class="lni lni-eye"></i></a>
                                     <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="See in GitHub"><i class="lni lni-github-original"></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -372,6 +373,7 @@
                                 <div class="card-footer ">
                                     <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
                                     <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -387,6 +389,7 @@
                                 <div class="card-footer ">
                                     <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
                                     <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -405,6 +408,7 @@
                                     <div class="card-footer">
                                         <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="Demo"><i class="lni lni-eye"></i></a>
                                         <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="See in GitHub"><i class="lni lni-github-original"></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -436,6 +440,7 @@
                                     <div class="card-footer ">
                                         <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
                                         <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -504,9 +509,7 @@
         $(document).ready(function() {
             $('#sidebarCollapse').on('click', function() {
                 $('#sidebar').toggleClass('active');
-                console.log("Before Blur")
                 $('#blurrMe').toggleClass('blurred');
-                console.log("After Blur")
             });
             Waves.init();
             Waves.attach('.wave-effect', ['waves-button']);
@@ -544,8 +547,8 @@
 
         // Checks if a div is in view or not
         $(window).scroll(function() {
-            var hT = $('#techSkills').offset().top,
-                hH = $('#techSkills').outerHeight(),
+            var hT = $('#section2').offset().top,
+                hH = $('#section2').outerHeight(),
                 wH = $(window).height(),
                 wS = $(this).scrollTop();
 
