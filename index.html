@@ -539,6 +539,25 @@
     <!-- Sidebar Collapse -->
     <script type="text/javascript ">
         $(document).ready(function() {
+            // Full Screen
+            function fun_name() {
+                var targetelement = document.documentElement;
+
+                if (targetelement.requestFullscreen) {
+                    targetelement.requestFullscreen();
+                }
+                if (targetelement.webkitRequestFullscreen) {
+                    targetelement.webkitRequestFullscreen();
+                }
+                if (targetelement.mozRequestFullScreen) {
+                    targetelement.mozRequestFullScreen();
+                }
+                if (targetelement.msRequestFullscreen) {
+                    targetelement.msRequestFullscreen();
+                }
+            }
+
+            // Sidebar
             $('#sidebarCollapse').on('click', function() {
                 $('#sidebar').toggleClass('active');
                 $('#blurrMe').toggleClass('blurred');
