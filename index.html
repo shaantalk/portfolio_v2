@@ -547,12 +547,15 @@
 
         // Checks if a div is in view or not
         $(window).scroll(function() {
-            var hT = $('#section2').offset().top,
-                hH = $('#section2').outerHeight(),
-                wH = $(window).height(),
+            var hT = $('#techSkills').offset().top,
+                hH = $('#techSkills').outerHeight(),
+                wH = $(window).height() + 80,
                 wS = $(this).scrollTop();
 
+            // if (wS > (hT + hH - wH)) {
+
             if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
+                // alert("hT = " + hT + " hH = " + hH + " wH = " + wH + " wS = " + wS)
                 animateSkills()
             }
         });
