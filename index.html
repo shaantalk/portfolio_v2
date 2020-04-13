@@ -549,13 +549,13 @@
         $(window).scroll(function() {
             var hT = $('#techSkills').offset().top,
                 hH = $('#techSkills').outerHeight(),
-                wH = $(window).height() + 80,
+                wH = $(window).height() + 120,
                 wS = $(this).scrollTop();
 
+            // This if statement will trigger animation only when scrolled from top
             // if (wS > (hT + hH - wH)) {
-
+            // This if statement will trigger animation when scrolled from top or bottom
             if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
-                // alert("hT = " + hT + " hH = " + hH + " wH = " + wH + " wS = " + wS)
                 animateSkills()
             }
         });
