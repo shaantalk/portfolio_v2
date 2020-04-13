@@ -48,7 +48,7 @@
             <ul class="list-unstyled components slimescroll-id" id="accordion">
                 <div class="user-profile">
                     <div class="dropdown user-pro-body">
-                        <div><img src="static/img/Hero2.jpg" alt="user-img" class="img-circle"></div>
+                        <div><img src="static/img/Hero2.jpg" alt="user-img" class="img-fluid rounded-circle"></div>
                         Santanu Panda
                     </div>
                 </div>
@@ -59,40 +59,84 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="wave-effect">About</a>
-                    <a href="#pageSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu" data-parent="#accordion" id="accordion2">
-                        <li><a href="#">Page 1</a></li>
-                        <li><a href="#">Page 2</a></li>
-                        <li><a href="#">Page 3</a></li>
+                    <!-- Data Structures Sub Menu -->
+                    <a href="#dsSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Data Structures</a>
+                    <ul class="collapse list-unstyled" id="dsSubmenu">
                         <li>
-                            <a href="#pageSubmenu2" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">More pages</a>
-                            <ul class="collapse list-unstyled" id="pageSubmenu2" data-parent="#accordion2">
-                                <li><a href="#">Page 4</a></li>
-                                <li><a href="#">Page 5</a></li>
-                                <li><a href="#">Page 6</a></li>
+                            <a href="#llSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Linked List</a>
+                            <ul class="collapse list-unstyled" id="llSubmenu">
+                                <li><a href="#">Single Link List</a></li>
+                                <li><a href="#">Double Link List</a></li>
+                                <li><a href="#">Circular Link List</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#pageSubmenu3" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Even more</a>
-                            <ul class="collapse list-unstyled" id="pageSubmenu3" data-parent="#accordion2">
-                                <li><a href="#">Page 7</a></li>
-                                <li><a href="#">Page 8</a></li>
-                                <li><a href="#">Page 9</a></li>
+                            <a href="#stackSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Stack</a>
+                            <ul class="collapse list-unstyled" id="stackSubmenu">
+                                <li><a href="#">Stack Using Linked List</a></li>
+                                <li><a href="#">Stack using list ( Python )</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#qSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Queue</a>
+                            <ul class="collapse list-unstyled" id="qSubmenu">
+                                <li><a href="#">Queue Using Linked List</a></li>
+                                <li><a href="#">Queue using list (Python)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#treeSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Tree</a>
+                            <ul class="collapse list-unstyled" id="treeSubmenu">
+                                <li><a href="#">Binary Tree</a></li>
+                                <li><a href="#">Binary Search Tree</a></li>
+                                <li><a href="#">KD Tree</a></li>
+                                <li><a href="#">Trie</a></li>
+                                <li><a href="#">Heap</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Graph</a></li>
+                    </ul>
+
+                    <!-- Algorithms Sub Menu -->
+                    <a href="#algoSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Algorithms</a>
+                    <ul class="collapse list-unstyled" id="algoSubmenu">
+                        <li>
+                            <a href="#searchingSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Searching</a>
+                            <ul class="collapse list-unstyled" id="searchingSubmenu">
+                                <li><a href="#">Linear Search</a></li>
+                                <li><a href="#">Binary Search</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#sortingSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Sorting</a>
+                            <ul class="collapse list-unstyled" id="sortingSubmenu">
+                                <li><a href="#">Selection Sort</a></li>
+                                <li><a href="#">Bubble Sort</a></li>
+                                <li><a href="#">Inertion Sort</a></li>
+                                <li><a href="#">Merge Sort</a></li>
+                                <li><a href="#">Quick Sort</a></li>
                             </ul>
                         </li>
                     </ul>
+
+                    <!-- Cheatsheets Sub Menu -->
+                    <a href="#cheatsheets" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Cheatsheets</a>
+                    <ul class="collapse list-unstyled" id="cheatsheets">
+                        <li><a href="#">Terms in Agile</a></li>
+                        <li><a href="#">Unix Commands</a></li>
+                        <li><a href="#">Git Commands</a></li>
+                    </ul>
+
+                    <!-- Travel Sub Menu -->
+                    <a href="#travelSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Travel Diaries</a>
+                    <ul class="collapse list-unstyled" id="travelSubmenu">
+                        <li><a href="#">Pondicherry</a></li>
+                        <li><a href="#">Ooty and Conoor</a></li>
+                        <li><a href="#">Future Travel Plans</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#" class=" wave-effect">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#" class=" wave-effect">Contact</a>
-                </li>
-                <li>
-                    <a href="login.html" class=" wave-effect">
-                        <i class="ti-user m-r-10"></i>Login Page
-                    </a>
+                    <a href="#" class="wave-effect">Interview Preparation</a>
                 </li>
             </ul>
         </nav>
@@ -354,10 +398,10 @@
                                 <div class="card-body">
                                     <p class="card-text">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
                                 </div>
-                                <div class="card-footer">
-                                    <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="Demo"><i class="lni lni-eye"></i></a>
-                                    <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="See in GitHub"><i class="lni lni-github-original"></i></a>
-                                    <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
+                                <div class="card-footer row mx-0" style="font-size: large;">
+                                    <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="col mx-auto"><i class="lni lni-link"></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="col mx-auto"><i class="lni lni-github-original"></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank" class="col mx-auto"><i class="lni lni-git"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -370,10 +414,10 @@
                                 <div class="card-body ">
                                     <p class="card-text ">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
                                 </div>
-                                <div class="card-footer ">
-                                    <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
-                                    <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
-                                    <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
+                                <div class="card-footer row mx-0" style="font-size: large;">
+                                    <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="col mx-auto"><i class="lni lni-link"></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="col mx-auto"><i class="lni lni-github-original"></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank" class="col mx-auto"><i class="lni lni-git"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -386,10 +430,10 @@
                                 <div class="card-body ">
                                     <p class="card-text ">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
                                 </div>
-                                <div class="card-footer ">
-                                    <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
-                                    <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
-                                    <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
+                                <div class="card-footer row mx-0" style="font-size: large;">
+                                    <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="col mx-auto"><i class="lni lni-link"></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="col mx-auto"><i class="lni lni-github-original"></i></a>
+                                    <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank" class="col mx-auto"><i class="lni lni-git"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -405,10 +449,10 @@
                                     <div class="card-body">
                                         <p class="card-text">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
                                     </div>
-                                    <div class="card-footer">
-                                        <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="Demo"><i class="lni lni-eye"></i></a>
-                                        <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="btn btn-custom" data-toggle="tooltip" data-placement="bottom" title="See in GitHub"><i class="lni lni-github-original"></i></a>
-                                        <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
+                                    <div class="card-footer row mx-0" style="font-size: large;">
+                                        <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="col mx-auto"><i class="lni lni-link"></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="col mx-auto"><i class="lni lni-github-original"></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank" class="col mx-auto"><i class="lni lni-git"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -421,10 +465,10 @@
                                     <div class="card-body ">
                                         <p class="card-text ">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
                                     </div>
-                                    <div class="card-footer ">
-                                        <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
-                                        <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
-                                        <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
+                                    <div class="card-footer row mx-0" style="font-size: large;">
+                                        <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="col mx-auto"><i class="lni lni-link"></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="col mx-auto"><i class="lni lni-github-original"></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank" class="col mx-auto"><i class="lni lni-git"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -437,10 +481,10 @@
                                     <div class="card-body ">
                                         <p class="card-text ">This is a minimal style, responsive portfolio page. It has 5 pages.</p>
                                     </div>
-                                    <div class="card-footer ">
-                                        <a href="https://shaantalk.github.io/miniportfolio/ " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="Demo "><i class="lni lni-eye "></i></a>
-                                        <a href="https://github.com/shaantalk/miniportfolio " target="blank " class="btn btn-custom " data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-github-original "></i></a>
-                                        <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank " class="btn btn-custom" data-toggle="tooltip " data-placement="bottom " title="See in GitHub "><i class="lni lni-git"></i></a>
+                                    <div class="card-footer row mx-0" style="font-size: large;">
+                                        <a href="https://shaantalk.github.io/miniportfolio/" target="blank" class="col mx-auto"><i class="lni lni-link"></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio" target="blank" class="col mx-auto"><i class="lni lni-github-original"></i></a>
+                                        <a href="https://github.com/shaantalk/miniportfolio/fork " target="blank" class="col mx-auto"><i class="lni lni-git"></i></a>
                                     </div>
                                 </div>
                             </div>

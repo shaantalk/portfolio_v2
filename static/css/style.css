@@ -13,7 +13,6 @@
     --neumorphic-color-bottom-right: #aca8a282;
     --skillbar-fill-color: #dd2138;
     --btn-custom-color: #dd2138;
-    --btn-custom-hover-color: #eb3f53cc;
     --footer-background: #a091b6cc;
     --footer-font-color: #ffffff;
 }
@@ -33,7 +32,6 @@
     --neumorphic-color-bottom-right: #000000;
     --skillbar-fill-color: #563d7ccc;
     --btn-custom-color: #563d7ccc;
-    --btn-custom-hover-color: #422e61cc;
     --footer-background: #222020;
     --footer-font-color: #ffffff;
 }
@@ -121,7 +119,8 @@ section {
 }
 
 .btn-custom :hover {
-    background: var(--btn-custom-hover-color);
+    background-image: none !important;
+    background-color: black !important;
 }
 
 
