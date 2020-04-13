@@ -539,23 +539,8 @@
     <!-- Sidebar Collapse -->
     <script type="text/javascript ">
         $(document).ready(function() {
-            // Full Screen
-            function fun_name() {
-                var targetelement = document.documentElement;
-
-                if (targetelement.requestFullscreen) {
-                    targetelement.requestFullscreen();
-                }
-                if (targetelement.webkitRequestFullscreen) {
-                    targetelement.webkitRequestFullscreen();
-                }
-                if (targetelement.mozRequestFullScreen) {
-                    targetelement.mozRequestFullScreen();
-                }
-                if (targetelement.msRequestFullscreen) {
-                    targetelement.msRequestFullscreen();
-                }
-            }
+            // Make Full Screen
+            full_Screen_function()
 
             // Sidebar
             $('#sidebarCollapse').on('click', function() {
@@ -618,6 +603,24 @@
                     width: $(this).attr('data-percent')
                 }, 2500);
             });
+        }
+
+        // Full Screen
+        function full_Screen_function() {
+            var targetelement = document.documentElement;
+
+            if (targetelement.requestFullscreen) {
+                targetelement.requestFullscreen();
+            }
+            if (targetelement.webkitRequestFullscreen) {
+                targetelement.webkitRequestFullscreen();
+            }
+            if (targetelement.mozRequestFullScreen) {
+                targetelement.mozRequestFullScreen();
+            }
+            if (targetelement.msRequestFullscreen) {
+                targetelement.msRequestFullscreen();
+            }
         }
     </script>
     <!--====== Typed js ======-->
