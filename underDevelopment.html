@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="shortcut icon" href="static/img/spTrans.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- Waves css -->
+    <link rel="stylesheet" href="static/plugins/css/waves.min.css">
+
+    <!-- Themify icons -->
+    <link rel="stylesheet" href="static/plugins/themify/themify-icons.css">
+
+    <!-- Line Icons -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+    <title>Santanu Panda</title>
+</head>
+
+<body class="disable-scrollbars">
+    <header class="main-navbar-header">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="menu-toggle-button">
+                <div class="user-profile py-0">
+                    <div class="dropdown user-pro-body">
+                        <div><img src="static/img/Hero2.jpg" alt="user-img" class="ml-2 mr-3 my-1 img-fluid rounded-circle"></div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="navbar-brand" href="#">Santanu Panda</a>
+
+            <ul class="navbar-nav ml-auto navbar-top-links">
+                <li class="dropdown">
+                    <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper h-100">
+
+        <div class="container content-area m-auto" style="margin-right: 0%;">
+            <div class="row">
+                <!-- Landing Section Starts -->
+                <section id="section1" class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row mt-md-3">
+                        <div id="landingText" class="col-md-5 col-sm-5 col-xs-12 offset-sm-1">
+                            <div class="container">
+                                <div class="ml-sm-5">
+                                    <p class="lead sub-title">Hello, I’m</p>
+                                    <p style="font-size:200%; font-weight: 400; margin-bottom: 2px;">under development...</p>
+                                    <p>Try after some days, ehh ?..</p>
+                                    <p>Meanwhile, please take a look at other articles :)</p>
+                                </div>
+                                <div class="row my-4 ml-0 ml-sm-4">
+                                    <div class="col">
+                                        <a class="btn neumorphic neumorphic-pill" href="./index.html" rel="noopener" target="_blank">Return to homepage</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 offset-sm-1">
+                            <img src="./static/img/coding.svg" class="img-fluid rounded" alt="Responsive image">
+                            <div class="row mt-5 px-2">
+                                <div class="neumorphic neumorphic-box col-md-10 col-sm-10 col-xs-12 offset-sm-1">
+                                    <div class="row mx-0 py-3 lead text-center">
+                                        <a href="https://www.facebook.com/talk2Shaan" class="col" rel="noopener" target="_blank"><i class="lni lni-facebook"></i></a>
+                                        <a href="https://github.com/shaantalk" class="col" rel="noopener" target="_blank"><i class="lni lni-github"></i></a>
+                                        <a href="https://www.linkedin.com/in/shaantalk/" class="col" rel="noopener" target="_blank"><i class="lni lni-linkedin"></i></a>
+                                        <a href="https://wa.me/917866040088" class="col" rel="noopener" target="_blank"><i class="lni lni-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Landing Section Ends -->
+            </div>
+        </div>
+    </div>
+    <!-- SVG filter for Firefox -->
+    <svg style="display:none" xmlns="http://www.w3.org/2000/svg" version="1.1 ">
+        <filter id="blur">
+        <feGaussianBlur stdDeviation="5" />
+        </filter>
+    
+        <filter id="blurLogo">
+        <feGaussianBlur stdDeviation="1" />
+        </filter>
+    </svg>
+    <!-- JQuery 3.2.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <!-- Popper -->
+    <script src="static/js/popper.min.js "></script>
+    <!-- Bootstrap -->
+    <script src="static/js/bootstrap.min.js "></script>
+    <!-- Waves -->
+    <script src="static/plugins/js/waves.min.js "></script>
+    <!-- Progress Bar -->
+    <script src="static/plugins/ProgressBar/progressbar.min.js "></script>
+    <!-- Sidebar Collapse -->
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            // Make Full Screen
+            full_Screen_function()
+
+            // Sidebar
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+                $('#blurrMe').toggleClass('blurred');
+            });
+            Waves.init();
+            Waves.attach('.wave-effect', ['waves-button']);
+            Waves.attach('.wave-effect-float', ['waves-button', 'waves-float']);
+        });
+
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function() {
+            if (localStorage.getItem('theme') === 'theme-light') {
+                setTheme('theme-light');
+                document.getElementById('slider').checked = true;
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            } else {
+                setTheme('theme-dark');
+                document.getElementById('slider').checked = false;
+            }
+        })();
+
+
+        // Full Screen
+        function full_Screen_function() {
+            var targetelement = document.documentElement;
+
+            if (targetelement.requestFullscreen) {
+                targetelement.requestFullscreen();
+            }
+            if (targetelement.webkitRequestFullscreen) {
+                targetelement.webkitRequestFullscreen();
+            }
+            if (targetelement.mozRequestFullScreen) {
+                targetelement.mozRequestFullScreen();
+            }
+            if (targetelement.msRequestFullscreen) {
+                targetelement.msRequestFullscreen();
+            }
+        }
+    </script>
+</body>
+
+</html>

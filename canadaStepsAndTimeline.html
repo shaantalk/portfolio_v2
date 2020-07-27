@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="static/img/spTrans.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+
+    <!-- Waves css -->
+    <link rel="stylesheet" href="static/plugins/css/waves.min.css" />
+
+    <!-- Themify icons -->
+    <link rel="stylesheet" href="static/plugins/themify/themify-icons.css" />
+
+    <!-- Line Icons -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
+
+    <title>Santanu Panda</title>
+  </head>
+
+  <body class="disable-scrollbars">
+    <header class="main-navbar-header">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="menu-toggle-button">
+          <a class="nav-link wave-effect" href="#" id="sidebarCollapse">
+            <i class="lni lni-menu"></i>
+          </a>
+        </div>
+        <a class="navbar-brand" href="./index.html">Santanu Panda</a>
+
+        <ul class="navbar-nav ml-auto navbar-top-links">
+          <li class="dropdown">
+            <label id="switch" class="switch">
+              <input type="checkbox" onchange="toggleTheme()" id="slider" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar" class="nav-sidebar active">
+        <ul class="list-unstyled components slimescroll-id" id="accordion">
+            <div class="user-profile">
+                <div class="dropdown user-pro-body">
+                    <div><img src="static/img/Hero2.jpg" alt="user-img" class="img-fluid rounded-circle"></div>
+                    Santanu Panda
+                </div>
+            </div>
+
+            <li class="active">
+                <a href="./index.html" class="wave-effect">
+                    <i class="ti-home m-r-10"></i> Home
+                </a>
+            </li>
+            <li>
+                <!-- Data Structures Sub Menu -->
+                <a href="#dsSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="lni lni-bricks"></i>&emsp;Data Structures</a>
+                <ul class="collapse list-unstyled" id="dsSubmenu">
+                    <li>
+                        <a href="#llSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Linked List</a>
+                        <ul class="collapse list-unstyled" id="llSubmenu">
+                            <li><a href="./underDevelopment.html">Single Link List</a></li>
+                            <li><a href="./underDevelopment.html">Double Link List</a></li>
+                            <li><a href="./underDevelopment.html">Circular Link List</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#stackSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Stack</a>
+                        <ul class="collapse list-unstyled" id="stackSubmenu">
+                            <li><a href="./underDevelopment.html">Stack Using Linked List</a></li>
+                            <li><a href="./underDevelopment.html">Stack using list&emsp;<i class="lni lni-python"></i></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#qSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Queue</a>
+                        <ul class="collapse list-unstyled" id="qSubmenu">
+                            <li><a href="./underDevelopment.html">Queue Using Linked List</a></li>
+                            <li><a href="./underDevelopment.html">Queue using list&emsp;<i class="lni lni-python"></i></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#treeSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Tree</a>
+                        <ul class="collapse list-unstyled" id="treeSubmenu">
+                            <li><a href="./underDevelopment.html">Binary Tree</a></li>
+                            <li><a href="./underDevelopment.html">Binary Search Tree</a></li>
+                            <li><a href="./underDevelopment.html">KD Tree</a></li>
+                            <li><a href="./underDevelopment.html">Trie</a></li>
+                            <li><a href="./underDevelopment.html">Heap</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./underDevelopment.html">Graph</a></li>
+                </ul>
+
+                <!-- Algorithms Sub Menu -->
+                <a href="#algoSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="lni lni-cog"></i>&emsp;Algorithms</a>
+                <ul class="collapse list-unstyled" id="algoSubmenu">
+                    <li>
+                        <a href="#searchingSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Searching</a>
+                        <ul class="collapse list-unstyled" id="searchingSubmenu">
+                            <li><a href="./underDevelopment.html">Linear Search</a></li>
+                            <li><a href="./underDevelopment.html">Binary Search</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sortingSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Sorting</a>
+                        <ul class="collapse list-unstyled" id="sortingSubmenu">
+                            <li><a href="./underDevelopment.html">Selection Sort</a></li>
+                            <li><a href="./underDevelopment.html">Bubble Sort</a></li>
+                            <li><a href="./underDevelopment.html">Inertion Sort</a></li>
+                            <li><a href="./underDevelopment.html">Merge Sort</a></li>
+                            <li><a href="./underDevelopment.html">Quick Sort</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Cheatsheets Sub Menu -->
+                <a href="#cheatsheets" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="lni lni-sort-alpha-asc"></i>&emsp;Cheatsheets</a>
+                <ul class="collapse list-unstyled" id="cheatsheets">
+                    <li><a href="./underDevelopment.html">Terms in Agile</a></li>
+                    <li><a href="./underDevelopment.html">Unix Commands</a></li>
+                    <li><a href="./underDevelopment.html">Git Commands</a></li>
+                </ul>
+
+                <!-- Travel Sub Menu -->
+                <a href="#travelSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="lni lni-travel"></i>&emsp;Travel Diaries</a>
+                <ul class="collapse list-unstyled" id="travelSubmenu">
+                    <li><a href="./underDevelopment.html">Pondicherry</a></li>
+                    <li><a href="./underDevelopment.html">Ooty and Conoor</a></li>
+                    <li><a href="./underDevelopment.html">Future Travel Plans</a></li>
+                </ul>
+
+                <!-- Canada Immigration Sub Menu -->
+                <a href="#canadaSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="lni lni-map-marker"></i>&emsp;Canada Immigration</a>
+                <ul class="collapse list-unstyled" id="canadaSubmenu">
+                    <li><a href="./canadaStepsAndTimeline.html">Steps and Timeline</a></li>
+                    <li><a href="./canadaCostBreakdown.html">Cost Breakdown</a></li>
+                    <li><a href="./underDevelopment.html">Important Materials</a></li>
+                    <li><a href="./canadaIndiaCostOfLivingExpenseCompared.html">Cost of Living - comparison</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./underDevelopment.html" class="wave-effect"><i class="lni lni-user"></i>&emsp;Interview Preparation</a>
+            </li>
+        </ul>
+    </nav>
+
+      <div
+        id="blurrMe"
+        class="container content-area"
+        style="margin-right: 0%;"
+      >
+        <div class="row">
+          <!-- Landing Section Starts -->
+          <section id="section1" class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row mt-md-3">
+              <div
+                id="landingText"
+                class="col-md-5 col-sm-5 col-xs-12 offset-sm-1"
+              >
+                <div class="container">
+                  <div class="ml-sm-5">
+                    <p class="lead sub-title">Hello, Fellow Dreamers</p>
+                    <p>
+                      This is my take on the Canadian immigration process and
+                      how I wish to get Canadian PR one day.
+                    </p>
+                    <p>
+                      Afters months of research, I decided that I will be
+                      following these steps. These steps might differ for some
+                      other person as there are many ways of getting PR
+                    </p>
+                    <p>
+                      I will specifically follow the FSW path in this document.
+                      I hope in future I can make similar document for other
+                      ways like PNP, CEC etc...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12 offset-sm-1">
+                <img
+                  src="./static/img/timeline.svg"
+                  class="img-fluid rounded"
+                  alt="Responsive image"
+                />
+              </div>
+            </div>
+          </section>
+          <!-- Landing Section Ends -->
+
+          <!-- Technical Skills Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1">
+			<table class="table">
+				<thead>
+				  <tr>
+					<th scope="col">#</th>
+					<th scope="col">First</th>
+					<th scope="col">Last</th>
+					<th scope="col">Handle</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row">1</th>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				  </tr>
+				  <tr>
+					<th scope="row">2</th>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				  </tr>
+				  <tr>
+					<th scope="row">3</th>
+					<td>Larry</td>
+					<td>the Bird</td>
+					<td>@twitter</td>
+				  </tr>
+				</tbody>
+			  </table>
+          </section>
+          <!-- Technical Skills Section Ends -->
+
+          <!-- About Me Section Starts -->
+          <section
+            id="section4"
+            class="col-md-12 col-sm-12 col-xs-12 text-center mt-3 mt-sm-0"
+          >
+            <div class="d-none d-sm-block">
+              <div class="row px-sm-3 py-2">
+                <div
+                  class="col-md-3 col-sm-3 col-xs-12 px-0 mx-sm-auto mt-2 mt-sm-0"
+                >
+                  <div class="lead">
+                    <a
+                      href="http://maps.google.com/?q=sri%20lasya%20fairview%20apartment,HBR%20Layout,%20Bangalore"
+                      rel="noopener"
+                      target="_blank"
+                      ><i class="mr-3 lni lni-map-marker"></i>HBR Layout,
+                      Bangalore</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-md-3 col-sm-3 col-xs-12 px-0 mx-sm-auto mt-2 mt-sm-0"
+                >
+                  <div class="lead">
+                    <a
+                      href="mailto:shaantalk@gmail.com"
+                      style="text-decoration: none;"
+                      ><i class="mr-3 lni lni-envelope"></i
+                      >shaantalk@gmail.com</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-md-3 col-sm-3 col-xs-12 px-0 mx-sm-auto mt-2 mt-sm-0"
+                >
+                  <div class="lead">
+                    <a href="tel:917866040088"
+                      ><i class="mr-3 lni lni-phone"></i>+91-7866040088</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none">
+              <div class="row py-2">
+                <div class="col">
+                  <div class="lead">
+                    <a
+                      href="http://maps.google.com/?q=sri%20lasya%20fairview%20apartment,HBR%20Layout,%20Bangalore"
+                      rel="noopener"
+                      target="_blank"
+                      ><i class="mr-3 lni lni-map-marker"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="lead">
+                    <a
+                      href="mailto:shaantalk@gmail.com"
+                      style="text-decoration: none;"
+                      ><i class="mr-3 lni lni-envelope"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="lead">
+                    <a href="tel:917866040088"
+                      ><i class="mr-3 lni lni-phone"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- SVG filter for Firefox -->
+    <svg
+      style="display: none;"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1 "
+    >
+      <filter id="blur">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+
+      <filter id="blurLogo">
+        <feGaussianBlur stdDeviation="1" />
+      </filter>
+    </svg>
+    <!-- JQuery 3.2.1 -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script> -->
+    <script src="static/js/jquery-3.2.1.slim.min.js"></script>
+    <!-- Popper -->
+    <script src="static/js/popper.min.js "></script>
+    <!-- Bootstrap -->
+    <script src="static/js/bootstrap.min.js "></script>
+    <!-- Waves -->
+    <script src="static/plugins/js/waves.min.js "></script>
+    <!-- Progress Bar -->
+    <script src="static/plugins/ProgressBar/progressbar.min.js "></script>
+    <!-- Sidebar Collapse -->
+    <script type="text/javascript ">
+      $(document).ready(function() {
+          // Make Full Screen
+          full_Screen_function()
+
+          // Sidebar
+          $('#sidebarCollapse').on('click', function() {
+              $('#sidebar').toggleClass('active');
+              $('#blurrMe').toggleClass('blurred');
+          });
+          Waves.init();
+          Waves.attach('.wave-effect', ['waves-button']);
+          Waves.attach('.wave-effect-float', ['waves-button', 'waves-float']);
+      });
+
+      // function to set a given theme/color-scheme
+      function setTheme(themeName) {
+          localStorage.setItem('theme', themeName);
+          document.documentElement.className = themeName;
+      }
+
+      // function to toggle between light and dark theme
+      function toggleTheme() {
+          if (localStorage.getItem('theme') === 'theme-dark') {
+              setTheme('theme-light');
+          } else {
+              setTheme('theme-dark');
+          }
+      }
+
+      // Full Screen
+      function full_Screen_function() {
+          var targetelement = document.documentElement;
+
+          if (targetelement.requestFullscreen) {
+              targetelement.requestFullscreen();
+          }
+          if (targetelement.webkitRequestFullscreen) {
+              targetelement.webkitRequestFullscreen();
+          }
+          if (targetelement.mozRequestFullScreen) {
+              targetelement.mozRequestFullScreen();
+          }
+          if (targetelement.msRequestFullscreen) {
+              targetelement.msRequestFullscreen();
+          }
+      }
+    </script>
+  </body>
+</html>

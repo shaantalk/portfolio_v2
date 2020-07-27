@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="static/img/spTrans.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+
+    <!-- Waves css -->
+    <link rel="stylesheet" href="static/plugins/css/waves.min.css" />
+
+    <!-- Themify icons -->
+    <link rel="stylesheet" href="static/plugins/themify/themify-icons.css" />
+
+    <!-- Line Icons -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
+
+    <title>Santanu Panda</title>
+  </head>
+
+  <body class="disable-scrollbars">
+    <header class="main-navbar-header">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="menu-toggle-button">
+          <a class="nav-link wave-effect" href="#" id="sidebarCollapse">
+            <i class="lni lni-menu"></i>
+          </a>
+        </div>
+        <a class="navbar-brand" href="./index.html">Santanu Panda</a>
+
+        <ul class="navbar-nav ml-auto navbar-top-links">
+          <li class="dropdown">
+            <label id="switch" class="switch">
+              <input type="checkbox" onchange="toggleTheme()" id="slider" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar" class="nav-sidebar active">
+        <ul class="list-unstyled components slimescroll-id" id="accordion">
+            <div class="user-profile">
+                <div class="dropdown user-pro-body">
+                    <div><img src="static/img/Hero2.jpg" alt="user-img" class="img-fluid rounded-circle"></div>
+                    Santanu Panda
+                </div>
+            </div>
+
+            <li class="active">
+                <a href="./index.html" class="wave-effect">
+                    <i class="ti-home m-r-10"></i> Home
+                </a>
+            </li>
+            <li>
+                <!-- Data Structures Sub Menu -->
+                <a href="#dsSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="lni lni-bricks"></i>&emsp;Data Structures</a>
+                <ul class="collapse list-unstyled" id="dsSubmenu">
+                    <li>
+                        <a href="#llSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Linked List</a>
+                        <ul class="collapse list-unstyled" id="llSubmenu">
+                            <li><a href="./underDevelopment.html">Single Link List</a></li>
+                            <li><a href="./underDevelopment.html">Double Link List</a></li>
+                            <li><a href="./underDevelopment.html">Circular Link List</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#stackSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Stack</a>
+                        <ul class="collapse list-unstyled" id="stackSubmenu">
+                            <li><a href="./underDevelopment.html">Stack Using Linked List</a></li>
+                            <li><a href="./underDevelopment.html">Stack using list&emsp;<i class="lni lni-python"></i></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#qSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Queue</a>
+                        <ul class="collapse list-unstyled" id="qSubmenu">
+                            <li><a href="./underDevelopment.html">Queue Using Linked List</a></li>
+                            <li><a href="./underDevelopment.html">Queue using list&emsp;<i class="lni lni-python"></i></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#treeSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Tree</a>
+                        <ul class="collapse list-unstyled" id="treeSubmenu">
+                            <li><a href="./underDevelopment.html">Binary Tree</a></li>
+                            <li><a href="./underDevelopment.html">Binary Search Tree</a></li>
+                            <li><a href="./underDevelopment.html">KD Tree</a></li>
+                            <li><a href="./underDevelopment.html">Trie</a></li>
+                            <li><a href="./underDevelopment.html">Heap</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./underDevelopment.html">Graph</a></li>
+                </ul>
+
+                <!-- Algorithms Sub Menu -->
+                <a href="#algoSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="lni lni-cog"></i>&emsp;Algorithms</a>
+                <ul class="collapse list-unstyled" id="algoSubmenu">
+                    <li>
+                        <a href="#searchingSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Searching</a>
+                        <ul class="collapse list-unstyled" id="searchingSubmenu">
+                            <li><a href="./underDevelopment.html">Linear Search</a></li>
+                            <li><a href="./underDevelopment.html">Binary Search</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sortingSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false">Sorting</a>
+                        <ul class="collapse list-unstyled" id="sortingSubmenu">
+                            <li><a href="./underDevelopment.html">Selection Sort</a></li>
+                            <li><a href="./underDevelopment.html">Bubble Sort</a></li>
+                            <li><a href="./underDevelopment.html">Inertion Sort</a></li>
+                            <li><a href="./underDevelopment.html">Merge Sort</a></li>
+                            <li><a href="./underDevelopment.html">Quick Sort</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Cheatsheets Sub Menu -->
+                <a href="#cheatsheets" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="lni lni-sort-alpha-asc"></i>&emsp;Cheatsheets</a>
+                <ul class="collapse list-unstyled" id="cheatsheets">
+                    <li><a href="./underDevelopment.html">Terms in Agile</a></li>
+                    <li><a href="./underDevelopment.html">Unix Commands</a></li>
+                    <li><a href="./underDevelopment.html">Git Commands</a></li>
+                </ul>
+
+                <!-- Travel Sub Menu -->
+                <a href="#travelSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="lni lni-travel"></i>&emsp;Travel Diaries</a>
+                <ul class="collapse list-unstyled" id="travelSubmenu">
+                    <li><a href="./underDevelopment.html">Pondicherry</a></li>
+                    <li><a href="./underDevelopment.html">Ooty and Conoor</a></li>
+                    <li><a href="./underDevelopment.html">Future Travel Plans</a></li>
+                </ul>
+
+                <!-- Canada Immigration Sub Menu -->
+                <a href="#canadaSubmenu" class="accordion-toggle wave-effect" data-toggle="collapse" aria-expanded="false"><i class="lni lni-map-marker"></i>&emsp;Canada Immigration</a>
+                <ul class="collapse list-unstyled" id="canadaSubmenu">
+                    <li><a href="./canadaStepsAndTimeline.html">Steps and Timeline</a></li>
+                    <li><a href="./canadaCostBreakdown.html">Cost Breakdown</a></li>
+                    <li><a href="./underDevelopment.html">Important Materials</a></li>
+                    <li><a href="./canadaIndiaCostOfLivingExpenseCompared.html">Cost of Living - comparison</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./underDevelopment.html" class="wave-effect"><i class="lni lni-user"></i>&emsp;Interview Preparation</a>
+            </li>
+        </ul>
+    </nav>
+
+      <div
+        id="blurrMe"
+        class="container content-area"
+        style="margin-right: 0%;"
+      >
+        <div class="row">
+          <!-- Landing Section Starts -->
+          <section id="section1" class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row mt-md-3">
+              <div
+                id="landingText"
+                class="col-md-5 col-sm-5 col-xs-12 offset-sm-1"
+              >
+                <div class="container">
+                  <div class="ml-sm-5">
+                    <p class="lead sub-title">Hello, all</p>
+                    <p>
+                      I know, I know... North American countries are way
+                      expensive compared to India.
+                    </p>
+                    <p>
+                      Thats why in the first few months, before we get a job in
+                      Canada we need to be smart and buy the things we really
+                      need from places that sell things at comparatively low or
+                      at a wholesale price.
+                    </p>
+                    <p>
+                      Here, I will list things that I personally need and their average cost in Canada. Umm, the prices may
+                      differ when you are in Canada, but I will try to update
+                      this page as frequently as I can.
+                    </p>
+                    <p>
+                      Ovbiously these are the average prices, and for any item listed here you can buy a premium variety that costs double the price.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12 offset-sm-1">
+                <img
+                  src="./static/img/shopping.svg"
+                  class="img-fluid rounded"
+                  alt="Responsive image"
+                />
+              </div>
+            </div>
+          </section>
+          <!-- Landing Section Ends -->
+
+          <!-- Beverages Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Beverages</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Coffee</th>
+                      <td>80 - 110 k Cups</td>
+                      <td>36 - 40</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Tea</th>
+                      <td>681 g</td>
+                      <td>6.97</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Milk</th>
+                      <td>4 L</td>
+                      <td>7</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pepsi</th>
+                      <td>32 cans</td>
+                      <td>10</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Red Bull</th>
+                      <td>24 cans</td>
+                      <td>43.99</td>
+                      <td>Costco</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Beverages Section Ends -->
+
+          <!-- Cereals and Flour Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Cereals and Flours</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Rice</th>
+                      <td>2 Kg</td>
+                      <td>3.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Basmati Rice</th>
+                      <td>5 Kg</td>
+                      <td>12.99</td>
+                      <td>Fresco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Ata</th>
+                      <td>2.5 Kg</td>
+                      <td>6.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Maida</th>
+                      <td>10 Kg</td>
+                      <td>8.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Rice Flour</th>
+                      <td>800 g</td>
+                      <td>1.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Besan</th>
+                      <td>1.8 Kg</td>
+                      <td>3.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Cereals and Flour Section Ends -->
+
+          <!-- Pulses Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Pulses</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Musoor</th>
+                      <td>1.81</td>
+                      <td>3.94</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Urad</th>
+                      <td>1.81 Kg</td>
+                      <td>6.27</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Moong</th>
+                      <td>1.81 Kg</td>
+                      <td>5.47</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Chana</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Rajma</th>
+                      <td>900 g</td>
+                      <td>2.87</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Chickpea</th>
+                      <td>5 Kg</td>
+                      <td>11.99</td>
+                      <td>Costco</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Pulses Section Ends -->
+
+          <!-- Spices Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Spices</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Salt</th>
+                      <td>1 Kg</td>
+                      <td>0.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Sugar</th>
+                      <td>2 Kg</td>
+                      <td>1</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Turmeric Powder</th>
+                      <td>400 g</td>
+                      <td>2.27</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Chilli Powder</th>
+                      <td>400 g</td>
+                      <td>2.27</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pepper</th>
+                      <td>255 g</td>
+                      <td>5</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Coriander Powder</th>
+                      <td>400 g</td>
+                      <td>1.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Cumin Powder</th>
+                      <td>400 g</td>
+                      <td>2.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bay Leaves</th>
+                      <td>50 g</td>
+                      <td>2.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Garam Masala</th>
+                      <td>400 g</td>
+                      <td>3.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Asafoetida</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Cumin seeds</th>
+                      <td>400 g</td>
+                      <td>3.77</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Black Mustard seeds</th>
+                      <td>200 g</td>
+                      <td>1.17</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mustard seeds</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Fennel seed</th>
+                      <td>400 g</td>
+                      <td>2.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Ajwain</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Coriender Seeds</th>
+                      <td>250 g</td>
+                      <td>2.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Aamchur Powder</th>
+                      <td>100 g</td>
+                      <td>1.99</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Cinnamon Bark</th>
+                      <td>200 g</td>
+                      <td>2.27</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Rai</th>
+                      <td>200 g</td>
+                      <td>1.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Spices Section Ends -->
+
+          <!-- Non-Veg Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Non-Veg Items</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Chicken Eggs</th>
+                      <td>30</td>
+                      <td>5.99</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Chicken</th>
+                      <td>1 Bird</td>
+                      <td>4</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mutton</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Non-Veg Section Ends -->
+
+          <!-- Breakfast Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Breakfast and snacks</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Cornflakes</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Sooji</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Poha</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Oats</th>
+                      <td>5 Kg</td>
+                      <td>7.99</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Biscuits</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Maggi</th>
+                      <td>1</td>
+                      <td>0.39</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Noodles</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Macaroni</th>
+                      <td>4 Kg</td>
+                      <td>7.99</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Cherios</th>
+                      <td></td>
+                      <td>6.89</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Chicken Momo</th>
+                      <td>2 Kg</td>
+                      <td>12.99</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Croissant</th>
+                      <td>10</td>
+                      <td>6</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bread</th>
+                      <td>9 pound</td>
+                      <td>4</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Naan Bread</th>
+                      <td>12</td>
+                      <td>4</td>
+                      <td>Costco</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Breakfast Section Ends -->
+
+          <!-- Vegetables Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Vegetables</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Potato</th>
+                      <td>4.54 Kg</td>
+                      <td>4.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Onion</th>
+                      <td>5kg</td>
+                      <td>6</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Tomato</th>
+                      <td>1 Kg</td>
+                      <td>2</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Ginger</th>
+                      <td>1 Kg</td>
+                      <td>3.71</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Garlic</th>
+                      <td>1 Kg</td>
+                      <td>2.28</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Okra</th>
+                      <td>1 Kg</td>
+                      <td>2.27</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Lime Juice</th>
+                      <td>400 ml</td>
+                      <td>1.29</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Carrot</th>
+                      <td>1.3 Kg</td>
+                      <td>2.47</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Peas</th>
+                      <td>2.5 Kg</td>
+                      <td>14.99</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Capsicum</th>
+                      <td>1 Kg</td>
+                      <td>6.55</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Cabbage</th>
+                      <td>1 Kg</td>
+                      <td>3.24</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Cauliflower</th>
+                      <td>1 Piece</td>
+                      <td>3.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Brinjal</th>
+                      <td>1 Kg</td>
+                      <td>1.28</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Chilli</th>
+                      <td>1 Kg</td>
+                      <td>1.28</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bottle Gourd</th>
+                      <td>1</td>
+                      <td>1.28</td>
+                      <td>Walmart</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Vegetables Section Ends -->
+
+          <!-- Fruits Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Fruits</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Cucumber</th>
+                      <td>907 g</td>
+                      <td>5.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Apple</th>
+                      <td>1 Kg</td>
+                      <td>5</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Orange</th>
+                      <td>1 Kg</td>
+                      <td>4.35</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Banana</th>
+                      <td>6</td>
+                      <td>0.56</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mango</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Papaya</th>
+                      <td>1</td>
+                      <td>1.47</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pineapple</th>
+                      <td>1</td>
+                      <td>2.97</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Watermelon</th>
+                      <td>1</td>
+                      <td>6</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Melon</th>
+                      <td>1</td>
+                      <td>4</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Fresh Produce Section Ends -->
+
+          <!-- Oil Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Oil</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Vegetable Oil</th>
+                      <td>3 L</td>
+                      <td>5</td>
+                      <td>Fresco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Ghee</th>
+                      <td>800g</td>
+                      <td>15.99</td>
+                      <td>Fresco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Butter</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Coconut Oil</th>
+                      <td>2 L</td>
+                      <td>14</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Oil Section Ends -->
+
+          <!-- Other Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Other Grocery Items</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Honey</th>
+                      <td>1 Kg</td>
+                      <td>7.84</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Ketchup</th>
+                      <td>1.5 Kg</td>
+                      <td>3.37</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Paneer</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Curd</th>
+                      <td>2 Kg</td>
+                      <td>5.79</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Popcorn</th>
+                      <td>24 Pack</td>
+                      <td>7.99</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Soyabean</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mixed Nuts</th>
+                      <td>1.5 Kg</td>
+                      <td>20.99</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Birthday Cake</th>
+                      <td>1</td>
+                      <td>10 - 20</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Cucumber Pickle</th>
+                      <td>1 Jar</td>
+                      <td>6</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Milk Cake</th>
+                      <td>1 Kg</td>
+                      <td>20</td>
+                      <td>Fresco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Khoya Barfi</th>
+                      <td>1 Kg</td>
+                      <td>20</td>
+                      <td>Fresco</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Oil Section Ends -->
+
+          <!-- Personal Care and Cleaning Items Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Personal Care and Cleaning Items</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Dish washing liquid</th>
+                      <td>5 L</td>
+                      <td>9.97</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Toilet cleaning liquid</th>
+                      <td>710 ml</td>
+                      <td>3.77</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Detergent</th>
+                      <td>4.43 L</td>
+                      <td>7.77</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Body Soap</th>
+                      <td>16</td>
+                      <td>16</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Shampoo</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Body Lotion</th>
+                      <td>3 L</td>
+                      <td>10</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Toothpaste</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Brush</th>
+                      <td>1</td>
+                      <td>1.5</td>
+                      <td>Walmart</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Towel</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Gillete Fusion + 48 Cartrages</th>
+                      <td>1 set</td>
+                      <td>45.99</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Disposable Mask</th>
+                      <td>50</td>
+                      <td>24.99</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Trimmer</th>
+                      <td>1</td>
+                      <td>49.99</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Electric Toothbrush</th>
+                      <td>1</td>
+                      <td>40</td>
+                      <td>Amazon</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Personal Care and Cleaning Items Section Ends -->
+
+          <!-- Clothes Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Clothes</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">T Shirt</th>
+                      <td>1</td>
+                      <td>6-15</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Underwear</th>
+                      <td>4 - 5</td>
+                      <td>15</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Joggers</th>
+                      <td>1</td>
+                      <td>9 - 13</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pajama Set</th>
+                      <td>2 - 4 Piece</td>
+                      <td>30</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Denim Jackets</th>
+                      <td>1</td>
+                      <td>30 - 90</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Wind Breaker</th>
+                      <td>1</td>
+                      <td>20</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Levis Jeans</th>
+                      <td>1</td>
+                      <td>30</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Skirts</th>
+                      <td>1</td>
+                      <td>20</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Summer Shoes</th>
+                      <td>1</td>
+                      <td>25 - 45</td>
+                      <td>Costco</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Monkey Cap</th>
+                      <td>1</td>
+                      <td>10 - 15</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> Ear Muff</th>
+                      <td>1</td>
+                      <td>15</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Colar/Scarf</th>
+                      <td>1</td>
+                      <td>20 - 30</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Down Feather Jacket</th>
+                      <td>1</td>
+                      <td>100 - 150</td>
+                      <td>Mountain Wirehouse</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Down Parka Jacket</th>
+                      <td>1</td>
+                      <td>250 - 300</td>
+                      <td>Eddie Bauer</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Gloves</th>
+                      <td>1</td>
+                      <td>30 - 100</td>
+                      <td>Ralph Lauren</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Winter Shoes</th>
+                      <td>1</td>
+                      <td>40 - 80</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Show Boots</th>
+                      <td>1</td>
+                      <td>200</td>
+                      <td>Timberland</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">All weather protection for shoes</th>
+                      <td>1</td>
+                      <td>10</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Clothes Section Ends -->
+
+          <!-- Home Improvement products Section Starts -->
+          <section id="section2" class="col-md-12 col-sm-12 col-xs-12 px-1 offset-sm-2">
+            <p class="lead sub-title">Home Improvement products</p>
+            <div class="row">
+              <div class="col-12 col-sm-8 ">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Canada (CAD)</th>
+                      <th scope="col">Store</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Blender</th>
+                      <td>100</td>
+                      <td>Amazon</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Toaster</th>
+                      <td>60</td>
+                      <td>Amazon</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Deep Frier</th>
+                      <td>100</td>
+                      <td>Amazon</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Rice Cooker</th>
+                      <td>100</td>
+                      <td>Amazon</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- Home Improvement products Section Ends -->
+
+          <!-- About Me Section Starts -->
+          <section
+            id="section4"
+            class="col-md-12 col-sm-12 col-xs-12 text-center mt-3 mt-sm-0"
+          >
+            <div class="d-none d-sm-block">
+              <div class="row px-sm-3 py-2">
+                <div
+                  class="col-md-3 col-sm-3 col-xs-12 px-0 mx-sm-auto mt-2 mt-sm-0"
+                >
+                  <div class="lead">
+                    <a
+                      href="http://maps.google.com/?q=sri%20lasya%20fairview%20apartment,HBR%20Layout,%20Bangalore"
+                      rel="noopener"
+                      target="_blank"
+                      ><i class="mr-3 lni lni-map-marker"></i>HBR Layout,
+                      Bangalore</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-md-3 col-sm-3 col-xs-12 px-0 mx-sm-auto mt-2 mt-sm-0"
+                >
+                  <div class="lead">
+                    <a
+                      href="mailto:shaantalk@gmail.com"
+                      style="text-decoration: none;"
+                      ><i class="mr-3 lni lni-envelope"></i
+                      >shaantalk@gmail.com</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="col-md-3 col-sm-3 col-xs-12 px-0 mx-sm-auto mt-2 mt-sm-0"
+                >
+                  <div class="lead">
+                    <a href="tel:917866040088"
+                      ><i class="mr-3 lni lni-phone"></i>+91-7866040088</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-sm-none">
+              <div class="row py-2">
+                <div class="col">
+                  <div class="lead">
+                    <a
+                      href="http://maps.google.com/?q=sri%20lasya%20fairview%20apartment,HBR%20Layout,%20Bangalore"
+                      rel="noopener"
+                      target="_blank"
+                      ><i class="mr-3 lni lni-map-marker"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="lead">
+                    <a
+                      href="mailto:shaantalk@gmail.com"
+                      style="text-decoration: none;"
+                      ><i class="mr-3 lni lni-envelope"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="lead">
+                    <a href="tel:917866040088"
+                      ><i class="mr-3 lni lni-phone"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- SVG filter for Firefox -->
+    <svg
+      style="display: none;"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1 "
+    >
+      <filter id="blur">
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+
+      <filter id="blurLogo">
+        <feGaussianBlur stdDeviation="1" />
+      </filter>
+    </svg>
+    <!-- JQuery 3.2.1 -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script> -->
+    <script src="static/js/jquery-3.2.1.slim.min.js"></script>
+    <!-- Popper -->
+    <script src="static/js/popper.min.js "></script>
+    <!-- Bootstrap -->
+    <script src="static/js/bootstrap.min.js "></script>
+    <!-- Waves -->
+    <script src="static/plugins/js/waves.min.js "></script>
+    <!-- Progress Bar -->
+    <script src="static/plugins/ProgressBar/progressbar.min.js "></script>
+    <!-- Sidebar Collapse -->
+    <script type="text/javascript ">
+      $(document).ready(function() {
+          // Sidebar
+          $('#sidebarCollapse').on('click', function() {
+              $('#sidebar').toggleClass('active');
+              $('#blurrMe').toggleClass('blurred');
+          });
+          Waves.init();
+          Waves.attach('.wave-effect', ['waves-button']);
+          Waves.attach('.wave-effect-float', ['waves-button', 'waves-float']);
+      });
+
+      // function to set a given theme/color-scheme
+      function setTheme(themeName) {
+          localStorage.setItem('theme', themeName);
+          document.documentElement.className = themeName;
+      }
+
+      // Immediately invoked function to set the theme on initial load
+      (function() {
+          if (localStorage.getItem('theme') === 'theme-light') {
+              setTheme('theme-light');
+              document.getElementById('slider').checked = true;
+          } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              setTheme('theme-dark');
+              document.getElementById('slider').checked = false;
+          } else {
+              setTheme('theme-dark');
+              document.getElementById('slider').checked = false;
+          }
+      })();
+
+      // function to toggle between light and dark theme
+      function toggleTheme() {
+          if (localStorage.getItem('theme') === 'theme-dark') {
+              setTheme('theme-light');
+          } else {
+              setTheme('theme-dark');
+          }
+      }
+    </script>
+  </body>
+</html>
